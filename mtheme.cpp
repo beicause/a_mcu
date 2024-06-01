@@ -359,8 +359,8 @@ void MTheme::fill_theme(Dictionary contrast) {
 
 	// Button variations
 
-	this->set_type_variation("FlatButton", "Button");
-	this->set_type_variation("FlatMenuButton", "MenuButton");
+	// this->set_type_variation("FlatButton", "Button");
+	// this->set_type_variation("FlatMenuButton", "MenuButton");
 
 	// Ref<StyleBoxEmpty> flat_button_normal = make_empty_stylebox();
 	// for (int i = 0; i < 4; i++) {
@@ -1198,15 +1198,15 @@ void MTheme::fill_theme(Dictionary contrast) {
 
 	// TooltipPanel + TooltipLabel
 	const Color tooltip_panel = blend_alpha(style_surface_high_color, 0.8);
-	this->set_type_variation("TooltipPanel", "PopupPanel");
+	// this->set_type_variation("TooltipPanel", "PopupPanel");
 	this->reset_style_box_flat_color("panel", "TooltipPanel", &tooltip_panel);
 	//make_flat_stylebox(Color(style_surface_high_color.r, style_surface_high_color.g, style_surface_high_color.b, 0.8) /* Color(0, 0, 0, 0.5) */, 2 * default_margin, 0.5 * default_margin, 2 * default_margin, 0.5 * default_margin, default_corner_radius));
 
-	this->set_type_variation("TooltipLabelM", "TooltipLabel");
+	// this->set_type_variation("TooltipLabel", "TooltipLabel");
 	// this->set_font_size("font_size", "TooltipLabel", -1);
 	// this->set_font("font", "TooltipLabel", Ref<Font>());
 
-	this->set_color("font_color", "TooltipLabelM", control_font_color);
+	this->set_color("font_color", "TooltipLabel", control_font_color);
 	// this->set_color("font_shadow_color", "TooltipLabel", Color(0, 0, 0, 0));
 	// this->set_color("font_outline_color", "TooltipLabel", Color(0, 0, 0, 0));
 

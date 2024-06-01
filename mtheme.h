@@ -41,10 +41,9 @@ protected:
 
 public:
 	MTheme() {
-		update_theme();
+		merge_with(ThemeDB::get_singleton()->get_default_theme());
 	}
 	void update_theme() {
-		merge_with(ThemeDB::get_singleton()->get_default_theme());
 		fill_theme(Mcu::get_scheme(theme_color, dark));
 	}
 
